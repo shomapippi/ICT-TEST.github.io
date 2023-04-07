@@ -1,0 +1,425 @@
+@charset "utf-8";
+
+body,html{
+  height: 100%;
+}
+.logo{
+  width: 100px;
+}
+.logo{
+  position: absolute;
+}
+.return-top input{
+  position: relative;
+  margin: 0px;
+  width: 100px;
+  height: 100px;
+}
+
+/* メインcontents */
+main{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 50px;
+  height: auto;
+}
+#index,#news,#activity,#tourism,#health,#crime_info{
+  height: auto;
+  background: #fff;
+  overflow: auto;
+}
+#index::-webkit-scrollbar,#news::-webkit-scrollbar,#activity::-webkit-scrollbar,#tourism::-webkit-scrollbar,#health::-webkit-scrollbar,#crime_info::-webkit-scrollbar{
+  display: none;
+}
+#index{
+  z-index: 1;
+}
+#news,#activity,#tourism,#health,#crime_info{
+  z-index: 0;
+}
+
+/* index */
+
+#index h2{
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 15px;
+  background-color: #4aea00;
+  border-radius: 2px;
+}
+#index h2::first-letter{
+  border-left: #fff 3px solid;
+  padding-left: 5px;
+}
+#index h3{
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  color: #4aea00;
+  background: #f3f3f3;
+  font-weight: 300;
+  padding: 5px 7px;
+  border-radius: 2px;
+}
+#index p{
+  width: 98%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+}
+#index h3::first-letter{
+  border-left: #fff 3px solid;
+  padding-left: 5px;
+}
+#index ul{
+  background: #f3f3f3;
+  list-style: none;
+  width: 98%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+  padding: 5px 7px;
+}
+#index ul li{
+  padding: 5px 7px;
+  border-bottom: #000 1px solid;
+}
+#index ul li span{
+  color: #4aea00;
+  padding-right: 10px;
+}
+
+/* news */
+
+#news h2{
+  background: #F8A23C;
+  color: #fff;
+  padding: 10px 15px;
+  font-weight: 600;
+  border-radius: 2px;
+}
+#news h2::first-letter{
+  border-left: 3px #fff solid;
+  padding-left: 5px;
+}
+#news h3{
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  color: #F8A23C;
+  background: #f3f3f3;
+  font-weight: 300;
+  padding: 5px 7px;
+  border-radius: 2px;
+}
+#news h3::first-letter{
+  border-left: #fff 3px solid;
+  padding-left: 5px;
+}
+#news p{
+  width: 98%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+}
+#news ol{
+  background: #f3f3f3;
+  width: 96%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+  padding: 5px 7px;
+}
+#news ol li{
+  padding: 5px 7px;
+  border-bottom: #000 1px solid;
+}
+#news ol li span{
+  color: #4aea00;
+  padding-right: 10px;
+}
+
+/* activity */
+
+#activity h2{
+  background: #ea00ff;
+  color: #fff;
+  padding: 10px 15px;
+  font-weight: 600;
+  border-radius: 2px;
+}
+#activity h2::first-letter{
+  border-left: #fff 3px solid;
+  padding-left: 5px;
+}
+#activity h3{
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  color: #ea00ff;
+  background: #f3f3f3;
+  font-weight: 300;
+  padding: 5px 7px;
+  border-radius: 2px;
+}
+#activity h3::first-letter{
+  border-left: #fff 3px solid;
+  padding-left: 5px;
+}
+#activity p{
+  width: 98%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+}
+
+/* tourism */
+
+#tourism h2{
+  background: #E83F7A;
+  color: #fff;
+  padding: 10px 15px;
+  font-weight: 600;
+  border-radius: 2px;
+}
+#tourism h2::first-letter{
+  border-left: #fff 3px solid;
+  padding-left: 5px;
+}
+#tourism h3{
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  color: #E83F7A;
+  background: #f3f3f3;
+  font-weight: 300;
+  padding: 5px 7px;
+  border-radius: 2px;
+}
+#tourism h3::first-letter{
+  border-left: #fff 3px solid;
+  padding-left: 5px;
+}
+#tourism p{
+  width: 98%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+}
+
+/* health */
+
+#health h2{
+  background: #E53F41;
+  color: #fff;
+  padding: 10px 15px;
+  font-weight: 600;
+  border-radius: 2px;
+}
+#health h2::first-letter{
+  border-left: #fff 3px solid;
+  padding-left: 5px;
+}
+#health h3{
+  color: #E53F41;
+  background: #f3f3f3;
+  font-weight: 300;
+  padding: 5px 7px;
+  border-radius: 2px;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+#health h3::first-letter{
+  border-left: 3px #fff solid;
+  padding-left: 5px;
+}
+#health p{
+  width: 98%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+}
+
+/* crime_info */
+
+#crime_info h2{
+  background: #0189A1;
+  color: #fff;
+  padding: 10px 15px;
+  font-weight: 600;
+  border-radius: 2px;
+}
+#crime_info h2::first-letter{
+  border-left: #fff 3px solid;
+  padding-left: 5px;
+}
+#crime_info h3{
+  color: #0189A1;
+  background: #f3f3f3;
+  font-weight: 300;
+  padding: 5px 7px;
+  border-radius: 2px;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+#crime_info h3::first-letter{
+  border-left: 3px #fff solid;
+  padding-left: 5px;
+}
+#crime_info p{
+  width: 98%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+}
+
+
+.pc-only{
+  justify-content: space-around;
+  flex-direction: row;
+  display: flex;
+  text-align: center;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.main_contents{
+  width: 60%;
+}
+.main_contents div{
+  width: 60%;
+  position: absolute;
+  margin: 0px;
+  height: auto;
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #4aea00;
+  z-index: 100000000;
+}
+
+/* ニュース */
+.news{
+  width: 15%;
+  height: auto;
+}
+.news ul p{
+  text-align: center;
+  color: #4aea00;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-bottom: #000 1px solid;
+}
+.news ul{
+  list-style: none;
+  border: 1px #000 solid;
+}
+.news ul li{
+  padding: 5px 10px;
+  border-bottom: 1px #000 solid;
+}
+.news ul li:last-child{
+  border-bottom: none;
+}
+
+/* サブコンテンツ */
+
+.sub-contents{
+  width: 15%;
+}
+.sub-contents-main{
+  border: 1px #000 solid;
+}
+.sub-contents-main-top{
+  margin-bottom: 15px;
+}
+.sub-contents-main ul p{
+  text-align: center;
+  color: #4aea00;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-bottom: #000 1px solid;
+}
+.sub-contents-main ul{
+  list-style: none;
+}
+.sub-contents-main ul li{
+  padding: 5px 10px;
+  border-bottom: 1px #000 solid;
+}
+.sub-contents-main ul li:last-child{
+  border-bottom: none;
+}
+
+.top-contents{
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.clock p{
+  position: absolute;
+  width: 127.5px;
+  height: 50px;
+}
+.clock input{
+  position: relative;
+  width: 127.5px;
+  height: 50px;
+}
+.clock{
+  right: 0;
+  position: absolute;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+/* スマホ対応 */
+@media screen and (max-width: 768px){
+  .pc-only{
+    display: none;
+  }
+  main{
+    display: block;
+    width: 100%;
+  }
+  .news{
+    display: none;
+  }
+  .sub-contents{
+    display: none;
+  }
+  .main_contents{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_contents div{
+    width: 97%;
+    position: initial;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #index,#news,#activity,#tourism,#health,#crime_info{
+    height: 75vh;
+    background: #fff;
+    overflow: auto;
+  }
+  #index::-webkit-scrollbar,#news::-webkit-scrollbar,#activity::-webkit-scrollbar,#tourism::-webkit-scrollbar,#health::-webkit-scrollbar,#crime_info::-webkit-scrollbar{
+    display: none;
+  }
+}

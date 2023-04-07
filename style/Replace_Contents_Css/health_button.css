@@ -1,0 +1,77 @@
+#index_button{
+  background: #fff;
+  font-weight: bold;
+  transition: 0.5s;
+  color: #5EB933;
+}
+#news_button{
+  color: #F8A23C;
+  font-weight: bold;
+  transition: 0.5s;
+}
+#activity_button{
+  color: #ea00ff;
+  font-weight: bold;
+  transition: 0.5s;
+}
+#tourism_button{
+  color: #E83F7A;
+  font-weight: bold;
+  transition: 0.5s;
+}
+#health_button{
+  background: #E53F41;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.5s;
+}
+#crime_info_button{
+  color: #0189A1;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+#index_button:hover{
+  background-color: #5db93386;
+  color: #fff;
+}
+#news_button:hover{
+  background-color: #f8a33ca7;
+  color: #fff;
+}
+#activity_button:hover{
+  background-color: #ea00ff5f;
+  color: #fff;
+
+}
+#tourism_button:hover{
+  background-color: #e83f7a8d;
+  color: #fff;
+
+}
+#crime_info_button:hover{
+  background-color: #0189a18c;
+  color: #fff;
+
+}
+.pc-only input{
+  text-align: center;
+  padding: 20px 10px;
+  width: 100%;
+  position: relative;
+}
+.botton_right_border{
+  border-right: 1px solid #888;
+  border-left: #888 1px solid;
+}
+.botton_left_border{
+  border-right: 1px solid #888;
+}
+/* コンテンツ入れ替え */
+#index,#news,#tourism,#activity,#crime_info{
+  display: none;
+  z-index: 0;
+}
+#health{
+  z-index: 1;
+}

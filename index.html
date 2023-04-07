@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- style -->
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/reset.css">
+  <link id="change_css" rel="stylesheet" href="./style/Replace_Contents_Css/index_button.css">
+  <link rel="stylesheet" href="./style/popup.css">
+  <link rel="stylesheet" href="./style/dycalendar.css">
+  <link rel="stylesheet" href="./style/calendar.css">
+  <!-- script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="./script/replace_contents.js"></script>
+  <script src="./script/time.js"></script>
+  <title>彩の国ふれあいコミュニティー</title>
+</head>
+<body>
+  <header>
+    <div class="top-contents">
+      <div class="return-top">
+        <img src="./images/icons.png" alt="" class="logo">
+        <input type="submit" value=" " onclick="index_button()">
+      </div>
+      <div class="clock">
+        <p id="output_date"></p>
+        <input id="clock_button" type="submit" value=" " onclick="clock_button_footer">
+        <div class="popup">
+            <div class="box">
+              <div class="container">
+                <div id="dycalendar"></div>
+              </div>
+            </div>
+            <script src="./script/dycalendar.js"></script>
+            <script>
+              dycalendar.draw({
+              target: '#dycalendar',
+              type: 'month',
+              dayformat: 'full',
+              monthformat: 'full',
+              highlighttargetdate: true,
+              prevnextbutton: 'show'
+            })
+            </script>
+          <button id="close">閉じる</button>
+        </div>
+        <!-- ポップアップ専用スクリプト -->
+        <script src="./script/popup.js"></script>
+
+        <div class="mobile-only">
+        </div>
+      </div>
+
+    </div>
+    <nav class="pc-only">
+      <input class="botton_right_border" id="index_button" type="submit" value="トップページ" onclick="index_button()">
+      <input class="botton_left_border" id="news_button" type="submit" value="ニュース" onclick="news_button()">
+      <input class="botton_left_border" id="activity_button" type="submit" value="活動" onclick="activity_button()">
+      <input class="botton_left_border" id="tourism_button" type="submit" value="観光" onclick="tourism_button()">
+      <input class="botton_left_border" id="health_button" type="submit" value="健康" onclick="health_button()">
+      <input class="botton_left_border" id="crime_info_button" type="submit" value="犯罪情報" onclick="crime_info_button()">
+    </nav>
+  </header>
+  <main>
+    <div class="news">
+      <ul>
+        <p>トップニュース</p>
+        <li>ニュース</li>
+        <li>ニュース</li>
+        <li>ニュース</li>
+        <li>ニュース</li>
+        <li>ニュース</li>
+        <li>ニュース</li>
+        <li>ニュース</li>
+        <li>ニュース</li>
+        <li>ニュース</li>
+      </ul>
+    </div>
+    <div class="main_contents">
+      <div id="index">
+        <h2>トップページ</h2>
+        <h3>当サイトについて</h3>
+        <p>当サイトは久喜工業高等学校の<a href="">生徒</a>によって作成されました。</p>
+        <h3>目的</h3>
+        <p>このサイトは埼玉県に在籍する高校生をはじめとする小中学生や地域の方々が誰でも気軽にボランティア活動などの呼びかけや地域のニュースなど様々情報を提供したいと思っています。<br>ぜひご活用ください！！</p>
+        <h2>ページ更新情報</h2>
+        <ul>
+          <li><span>2023/3/26</span>トップページが完成しました！！</li>
+        </ul>
+      </div>
+      <div id="news">
+        <h2>ニュース</h2>
+        <h3>ニュースページ</h3>
+        <p>ニュースページでは埼玉県の最新ニュースを見ることができます！<br>毎日楽しいニュースを掲載して行きますので読んでいただけると幸いです！！</p>
+        <h2>人気ニューストップ5!</h2>
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </div>
+      <div id="activity">
+        <h2>活動</h2>
+        <h3>ボランティア</h3>
+        <p>このページではボランティア活動の宣伝や実績を掲示することができます！</p>
+      </div>
+      <div id="tourism">
+        <h2>観光</h2>
+        <h3>観光スポット！</h3>
+        <p>ここでは埼玉県の観光地や個人的に「ここがいい！」「ここ知ってもらいたい！」と思ったところを共有できたりします！！</p>
+      </div>
+      <div id="health">
+        <h2>健康</h2>
+        <h3>健康管理</h3>
+        <p>ここでは簡単な診断や最近の注意したほうが良い病気などがわかります</p>
+      </div>
+      <div id="crime_info">
+        <h2>犯罪情報</h2>
+        <h3>犯罪者</h3>
+        <p>不審者などを見つけた際に「どこどこにいたよ」などいろいろな情報を共有できます。</p>
+      </div>
+    </div>
+    <div class="sub-contents">
+      <div class="sub-contents-main sub-contents-main-top">
+        <ul>
+          <p>トップコンテンツ</p>
+          <li>サブコンテンツ</li>
+          <li>サブコンテンツ</li>
+          <li>サブコンテンツ</li>
+          <li>サブコンテンツ</li>
+        </ul>
+      </div>
+      <div class="sub-contents-main sub-contents-main-bottom">
+        <ul>
+          <p>トップコンテンツ</p>
+          <li>サブコンテンツ</li>
+          <li>サブコンテンツ</li>
+          <li>サブコンテンツ</li>
+          <li>サブコンテンツ</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer id="footer">&copy;</footer>
+</body>
+</html>
